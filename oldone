@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Spotify Redirect</title><script>
+    const spotifyLinks = [
+        "https://open.spotify.com/track/5FXMRdJjKq1BIX4e8Eg9mK?si=Ga8k7sjBTuirGk5T7Tk3WA&utm_source=copy-link",
+        "https://open.spotify.com/track/5H4rKylLnO8KrmdXTRhj5s?si=l4ra1xSIQ8mbJxGDf_7_SQ&utm_source=copy-link",
+        "https://open.spotify.com/track/5FXMRdJjKq1BIX4e8Eg9mK?si=Ga8k7sjBTuirGk5T7Tk3WA&utm_source=copy-link",
+        "https://open.spotify.com/track/5FXMRdJjKq1BIX4e8Eg9mK?si=Ga8k7sjBTuirGk5T7Tk3WA&utm_source=copy-link",
+        "https://open.spotify.com/track/6wXPV6dNRAhFavrRaCdMXT?si=rBE1GQ53TmuZnJJRgtDP7A&utm_source=copy-link",
+        "https://open.spotify.com/track/5EqggGHTuqiUfruO2gMHhI?si=dgWRGLreTTu_dAgkxEif_Q&utm_source=copy-link"
+    ];
+
+    // Select a random Spotify link
+    const randomIndex = Math.floor(Math.random() * spotifyLinks.length);
+
+    const selectedSong = spotifyLinks[randomIndex];
+
+    // Redirect to selected song
+    window.location.replace(selectedSong);
+</script>
+
+</head><body>
+    <h2>🎵 Finding your random song...</h2>
+    <p>Redirecting to Spotify...</p><a id="spotifyLink" href="#">Open Spotify</a>
+
+<script>
+    document.getElementById("spotifyLink").href = selectedSong;
+</script>
+
+</body>
+</html>
